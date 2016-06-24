@@ -1,0 +1,105 @@
+body{
+	margin: 0;
+}
+nav{
+	background-color: #333;
+	color:#fff;
+	margin: auto;
+}
+.container{
+	margin: auto;
+	width: 1070px;
+}
+#menu-toggle{
+	display: none;
+}
+nav ul{
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul li{
+	display: inline-block;
+	position: relative;
+}
+
+nav ul li a{
+	font-size: 20px;
+	padding: 10px;
+	display: block;
+	color: #fff;
+	width: 100px;
+	text-decoration: none;
+}
+nav ul li a:hover{
+	background-color: #fff;
+	color: #000;
+}
+nav ul li ul{
+	float: none;
+	background-color: #ff6600;
+	margin: 0;
+	display: none;
+	height: auto;
+	position: absolute;
+	top: 45px;
+}
+nav ul li ul li{ 
+	display: block;
+	position: relative;
+}
+nav ul li:hover ul{
+	display: block;
+}
+nav ul li:hover ul li ul{
+	display: none;
+}
+nav ul li ul li ul{
+	float: none;
+	background-color: #333;
+	margin: 0;
+	display: none;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 120px;
+}
+nav ul li ul li:hover ul{
+	display: block;
+}
+@media screen and (max-width: 768px){
+	.container{
+		width: 100%;
+	}
+	.nav-bar{
+		display: block;
+	}
+	#menu-toggle{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	.menu-btn{
+		background-color: #ff6600;
+		width: 100px;
+	}
+	a.menu-btn{
+		font-size: 20px;
+	}
+	nav ul li{
+		display: block;
+		text-align: center;
+	}
+	nav ul li a{
+		width: 100%;
+	}
+	nav ul li ul{
+		top: 0;
+		bottom: 0;
+	}
+	nav ul li ul li{
+		width: 100%;
+	}
+
+}
